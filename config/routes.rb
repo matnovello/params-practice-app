@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get "/params_exercise" => "params#all_caps"
+    get "/params_exercise/:wildcard" => "params#wildcard"
   end
 end
